@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(90deg, #ffffff, #c6a3e3);
+}
+
+.description {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #bb86fc, #ff79c6);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(187, 134, 252, 0.3);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+
+form {
+  border: dashed 2px #8f09e2;
+  padding: .5rem 2rem;
+  font: 16px sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.internal {
+  display: flex;
+  gap: 2rem;
+}
+
+.internal {
+  display: flex;
+  gap: 2rem;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  color: #374151;
+  font-family: monospace;
+  height: 38px;
+  padding: 0 16px;
+  border: 1px solid #8f09e2;
+  border-radius: 0.25rem;
+}
+
+button {
+  height: 2.5rem;
+  background: #9c3cd8;
+  color: #121212;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgb(168, 90, 190);
+  box-shadow: 0 0 10px rgba(222, 121, 255, 0.8);
+}
+
+img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media print {
+  button {
+    display: none;
+  }
+}
